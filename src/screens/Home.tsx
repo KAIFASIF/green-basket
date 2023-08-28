@@ -61,11 +61,11 @@ const Home = () => {
       <div>
         <img
           src={basket}
-          className="w-full object-cover h-screen lg:h-96  opacity-10"
+          className="w-full object-cover h-screen lg:h-96  opacity-10 "
         />
       </div>
 
-      <div className="absolute top-0 lg:top-10 w-full">
+      <div className="absolute top-0 lg:top-10 w-full mt-5">
         <div className="flex flex-col justify-center">
           <div className="flex justify-center">
             <div className="flex w-[90%] lg:w-[70%]">

@@ -17,7 +17,7 @@ const Navbar = () => {
   ];
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
   return (
-    <div className="flex p-4 bg-white shadow-xl justify-between "  onClick={toggleDropdown}>
+    <div className="flex p-4 bg-white shadow-xl justify-between fixed z-20 w-full"  onClick={toggleDropdown}>
       <div>
         {" "}
         <h1 className="font-semibold text-2xl text-lime-600">Green Basket</h1>
