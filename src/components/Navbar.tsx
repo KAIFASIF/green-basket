@@ -53,7 +53,7 @@ const Navbar = () => {
               menuOptions.map((ele: any) => (
                 <li className="font-semibold hover:cursor-pointer hover:text-lime-600 text-gray-600">
                   {" "}
-                  About us
+                  {ele?.label}
                 </li>
               ))}
           </ul>
