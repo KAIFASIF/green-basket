@@ -8,7 +8,7 @@ import Home from "./screens/Home";
 
 const App = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white overflow-clip">
       <Navbar />
       <section className="flex justify-center">
         <Home />
@@ -19,10 +19,10 @@ const App = () => {
       <section className="flex justify-center">
         <About />
       </section>
-      <section className="flex justify-center p-10  bg-gray-100">
+      <section className="flex justify-center w-full bg-gray-100">
         <Services />
-      </section>
-      <section className="flex justify-center">
+      </section> 
+      <section className="flex justify-center w-full">
         <Deals />
       </section>
     </div>

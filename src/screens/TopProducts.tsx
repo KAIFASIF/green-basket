@@ -12,7 +12,7 @@ const TopProducts = () => {
       <div className="flex justify-center">
         <p className="font-semibold text-3xl text-blue-950"> Top Products</p>
       </div>
-      <div className="grid grid-cols-3 gap-10 mt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-10">
         <div>
           <Card title="Fruits & Nuts" price="400" image={fruits} />
         </div>
