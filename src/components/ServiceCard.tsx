@@ -1,23 +1,20 @@
 import React from "react";
 import Button from "./Button";
-import { CiDeliveryTruck } from "react-icons/ci";
 
 interface serviceCardProp {
-  btnTitle: string;
   title: string;
+  btnTitle: string;
   btnClass?: string;
   dividerClass?: string;
-  cardIconBorderClass?: string;
-  cardIconClass?: string;
+  children?: any;
 }
 
 const ServiceCard: React.FC<serviceCardProp> = ({
-  dividerClass,
-  cardIconBorderClass,
-  cardIconClass,
+  title,
   btnTitle,
   btnClass,
-  title,
+  dividerClass,
+  children,
 }) => {
   return (
     <div className="w-80 h-60 shadow-md  flex-col bg-white">
@@ -28,15 +25,7 @@ const ServiceCard: React.FC<serviceCardProp> = ({
             className={`flex justify-center items-center w-full h-1 absolute top-0 px-4 border-2
             ${dividerClass ? dividerClass : "border-blue-950 bg-blue-950"}`}
           >
-            <div
-              className={`W-1/2 bg-white border-2  rounded origin-center rotate-45
-            ${cardIconBorderClass ? cardIconBorderClass : "border-blue-950"}`}
-            >
-              <CiDeliveryTruck
-                className={`p-1 origin-center -rotate-45  scale-x-[-1] text-5xl font-semibold
-              ${cardIconClass ? cardIconClass : "text-blue-950 "}`}
-              />
-            </div>
+            {children}
           </div>
         </div>
       </div>

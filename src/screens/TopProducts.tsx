@@ -12,14 +12,14 @@ const TopProducts = () => {
       <div className="flex justify-center">
         <p className="font-semibold text-3xl text-blue-950"> Top Products</p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
         <div>
           <Card title="Fruits & Nuts" price="400" image={fruits} />
         </div>
         <div>
           <Card title="Dairy Products" price="200" image={dairy} />
         </div>
-        <div>
+        <div className="md:col-span-2 lg:col-span-1 flex justify-center">
           <Card title="Vegetables" price="600" image={Veggies} />
         </div>
       </div>

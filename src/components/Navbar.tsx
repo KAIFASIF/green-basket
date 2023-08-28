@@ -17,7 +17,7 @@ const Navbar = () => {
   ];
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
   return (
-    <div className="flex p-4 bg-white shadow-xl justify-between ">
+    <div className="flex p-4 bg-white shadow-xl justify-between "  onClick={toggleDropdown}>
       <div>
         {" "}
         <h1 className="font-semibold text-2xl text-lime-600">Green Basket</h1>
@@ -35,7 +35,7 @@ const Navbar = () => {
             <ul className="flex flex-col gap-y-4 p-5">
               {menuOptions.length > 0 &&
                 menuOptions.map((ele: menuOptionsTypes) => (
-                  <li
+                  <li  onClick={toggleDropdown}
                     key={ele.id}
                     className="font-semibold hover:cursor-pointer hover:text-lime-600 text-gray-600"
                   >

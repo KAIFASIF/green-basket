@@ -71,15 +71,15 @@ const Home = () => {
             <div className="flex w-[90%] lg:w-[70%]">
               <div className="grid grid-cols-1 md:grid-cols-3">
                 <div className="md:w-full col-span-1 md:col-span-3 lg:col-span-2 flex flex-col justify-center order-2 lg:order-1">
-                  <p className="font-semibold text-2xl text-blue-950">
+                  <p className="font-semibold text-2xl text-lime-950">
                     Welcome to Green Basket
                   </p>
-                  <p className="font-semibold text-4xl text-blue-950 mt-2">
+                  <p className="font-semibold text-4xl text-blue-950 mt-4 ">
                     The World's Best{" "}
                     <span className="text-lime-400">Grocery Shopping</span>{" "}
                     Website
                   </p>
-                  <p className="text-gray-400 mt-5">
+                  <p className="text-gray-400 mt-5 ">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Totam aliquid esse quaerat quas nostrum, adipisci dolorum
                     tenetur eum doloribus assumenda accusamus exercitationem
